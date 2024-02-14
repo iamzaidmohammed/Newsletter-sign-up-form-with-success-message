@@ -1,0 +1,107 @@
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto-regular;
+}
+
+.img {
+  width: 100%;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.padding {
+  padding: 50px 30px;
+}
+
+.heading {
+  color: var(--Dark-Slate-Grey);
+  font-family: roboto-bold;
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.subtext {
+  color: var(--CharcoalGrey);
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.list-text {
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-family: roboto-bold;
+}
+
+.error {
+  font-family: roboto-bold;
+  color: var(--Tomato);
+}
+
+input,
+.subscribe-btn {
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.subscribe-btn {
+  font-size: 16px;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  font-family: roboto-bold;
+  border: none;
+}
+
+.subscribe-btn:hover {
+  background: linear-gradient(to left, var(--Tomato), #ff3e83);
+}
