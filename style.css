@@ -23,6 +23,10 @@
   font-family: roboto-regular;
 }
 
+.form {
+  /* display: none; */
+}
+
 .img {
   width: 100%;
 }
@@ -82,7 +86,7 @@ label {
 }
 
 input,
-.subscribe-btn {
+.btn {
   padding: 20px;
   border-radius: 5px;
   outline: none;
@@ -94,7 +98,7 @@ input {
   font-size: 18px;
 }
 
-.subscribe-btn {
+.btn {
   font-size: 16px;
   background-color: var(--Dark-Slate-Grey);
   color: var(--White);
@@ -102,6 +106,32 @@ input {
   border: none;
 }
 
-.subscribe-btn:hover {
+.btn:hover {
   background: linear-gradient(to left, var(--Tomato), #ff3e83);
+}
+
+/* Success page */
+
+.success {
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.success-img,
+.success-heading {
+  margin-bottom: 30px;
+}
+
+.success-heading {
+  color: var(--Dark-Slate-Grey);
+  font-family: roboto-bold;
+  font-size: 38px;
+}
+
+.text {
+  color: var(--Grey);
+  font-size: 17px;
 }
