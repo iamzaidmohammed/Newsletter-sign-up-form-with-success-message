@@ -23,10 +23,6 @@
   font-family: roboto-regular;
 }
 
-.form {
-  /* display: none; */
-}
-
 .img {
   width: 100%;
 }
@@ -85,7 +81,7 @@ label {
   color: var(--Tomato);
 }
 
-input,
+#email,
 .btn {
   padding: 20px;
   border-radius: 5px;
@@ -93,9 +89,15 @@ input,
   cursor: pointer;
 }
 
-input {
+#email {
   margin-bottom: 20px;
   font-size: 18px;
+  color: var(--CharcoalGrey);
+}
+
+#email.error {
+  border-color: var(--Tomato);
+  color: var(--Tomato);
 }
 
 .btn {
